@@ -53,4 +53,32 @@ struct InputReaderClient {
         
         return games
     }
+    
+    static func rucksackInventory() -> Array<RucksackGroup> {
+        let filePath = Bundle.main.url(forResource: "rucksack_inventory", withExtension: nil)
+        var rucksacks: Array<RucksackGroup> = []
+        
+        do {
+            let contents = try String(contentsOf: filePath!)
+            let lines = contents.split(separator: "\n")
+            
+            var groupId = 1
+            var groupRucksacks: Array<Rucksack> = []
+            
+            lines.forEach { line in
+                groupRucksacks.append(Rucksack(contents: "\(line)"))
+                
+                if groupRucksacks.count == 3 {
+                    let newGroup = RucksackGroup(id: groupId, rucksacks: groupRucksacks)
+                    rucksacks.append(newGroup)
+                    groupId += 1
+                    groupRucksacks = []
+                }
+            }
+        } catch {
+            print(error)
+        }
+        
+        return rucksacks
+    }
 }

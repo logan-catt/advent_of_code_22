@@ -33,6 +33,17 @@ struct ContentView: View {
                         Text("Rock, Paper, Scissors")
                     }
                 }
+                
+                NavigationLink {
+                    RucksackView()
+                } label: {
+                    HStack {
+                        Image(systemName: "backpack")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                        Text("Rucksack Inventory")
+                    }
+                }
             }
         }
     }

@@ -24,6 +24,9 @@
 		027A50C4295CC5C700E302BE /* strategy_guide in Resources */ = {isa = PBXBuildFile; fileRef = 027A50C3295CC5C700E302BE /* strategy_guide */; };
 		027A50C6295CC5EE00E302BE /* RockPaperScissors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A50C5295CC5EE00E302BE /* RockPaperScissors.swift */; };
 		027A50C8295CD15500E302BE /* RockPaperScissorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A50C7295CD15500E302BE /* RockPaperScissorsView.swift */; };
+		027A50CA295CE3AE00E302BE /* rucksack_inventory in Resources */ = {isa = PBXBuildFile; fileRef = 027A50C9295CE3AE00E302BE /* rucksack_inventory */; };
+		027A50CC295CE4BC00E302BE /* Rucksack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A50CB295CE4BC00E302BE /* Rucksack.swift */; };
+		027A50CE295CECE200E302BE /* RucksackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A50CD295CECE200E302BE /* RucksackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		027A50C3295CC5C700E302BE /* strategy_guide */ = {isa = PBXFileReference; lastKnownFileType = text; path = strategy_guide; sourceTree = "<group>"; };
 		027A50C5295CC5EE00E302BE /* RockPaperScissors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissors.swift; sourceTree = "<group>"; };
 		027A50C7295CD15500E302BE /* RockPaperScissorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsView.swift; sourceTree = "<group>"; };
+		027A50C9295CE3AE00E302BE /* rucksack_inventory */ = {isa = PBXFileReference; lastKnownFileType = text; path = rucksack_inventory; sourceTree = "<group>"; };
+		027A50CB295CE4BC00E302BE /* Rucksack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rucksack.swift; sourceTree = "<group>"; };
+		027A50CD295CECE200E302BE /* RucksackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RucksackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,7 @@
 				027A50B22944601C00E302BE /* Elf.swift */,
 				027A50B42944606300E302BE /* Food.swift */,
 				027A50C5295CC5EE00E302BE /* RockPaperScissors.swift */,
+				027A50CB295CE4BC00E302BE /* Rucksack.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +175,7 @@
 				027A50B9294463B000E302BE /* ElfListView.swift */,
 				027A50BB294464A400E302BE /* ElfDetailView.swift */,
 				027A50C7295CD15500E302BE /* RockPaperScissorsView.swift */,
+				027A50CD295CECE200E302BE /* RucksackView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 			children = (
 				027A50BE29446B5400E302BE /* elf_food */,
 				027A50C3295CC5C700E302BE /* strategy_guide */,
+				027A50C9295CE3AE00E302BE /* rucksack_inventory */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -296,6 +305,7 @@
 				027A50BF29446B5400E302BE /* elf_food in Resources */,
 				027A508F29445EEE00E302BE /* Preview Assets.xcassets in Resources */,
 				027A50C4295CC5C700E302BE /* strategy_guide in Resources */,
+				027A50CA295CE3AE00E302BE /* rucksack_inventory in Resources */,
 				027A508C29445EEE00E302BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,11 +334,13 @@
 				027A50BA294463B000E302BE /* ElfListView.swift in Sources */,
 				027A50C8295CD15500E302BE /* RockPaperScissorsView.swift in Sources */,
 				027A50B32944601C00E302BE /* Elf.swift in Sources */,
+				027A50CE295CECE200E302BE /* RucksackView.swift in Sources */,
 				027A50B8294461A200E302BE /* ElfCellView.swift in Sources */,
 				027A50BC294464A400E302BE /* ElfDetailView.swift in Sources */,
 				027A50C229446BA600E302BE /* InputReaderClient.swift in Sources */,
 				027A50C6295CC5EE00E302BE /* RockPaperScissors.swift in Sources */,
 				027A50B52944606300E302BE /* Food.swift in Sources */,
+				027A50CC295CE4BC00E302BE /* Rucksack.swift in Sources */,
 				027A508A29445EEB00E302BE /* ContentView.swift in Sources */,
 				027A508829445EEB00E302BE /* AdventOfCode22App.swift in Sources */,
 			);

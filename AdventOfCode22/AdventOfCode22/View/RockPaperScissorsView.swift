@@ -1,10 +1,3 @@
-//
-//  RockPaperScissorsView.swift
-//  AdventOfCode22
-//
-//  Created by Logan Parmeter on 12/28/22.
-//
-
 import SwiftUI
 
 struct RockPaperScissorsView: View {

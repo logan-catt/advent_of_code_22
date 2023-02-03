@@ -1,10 +1,3 @@
-//
-//  InputReaderClient.swift
-//  AdventOfCode22
-//
-//  Created by Logan Parmeter on 12/10/22.
-//
-
 import Foundation
 
 struct InputReaderClient {
@@ -80,5 +73,64 @@ struct InputReaderClient {
         }
         
         return rucksacks
+    }
+    
+    static func cleaningAssignments() -> Array<CleaningPair> {
+        let filePath = Bundle.main.url(forResource: "cleaning_assignments", withExtension: nil)
+        var assignments: Array<CleaningPair> = []
+        
+        do {
+            let contents = try String(contentsOf: filePath!)
+            let lines = contents.split(separator: "\n")
+            
+            lines.forEach { line in
+                let sections = line.components(separatedBy: .decimalDigits.inverted)
+                
+                let assignOne = CleaningAssignment(startSection: Int(sections[0]) ?? -1, endSection: Int(sections[1]) ?? -1)
+                let assignTwo = CleaningAssignment(startSection: Int(sections[2]) ?? -1, endSection: Int(sections[3]) ?? -1)
+                
+                assignments.append(CleaningPair(assignOne: assignOne, assignTwo: assignTwo))
+            }
+        } catch {
+            print(error)
+        }
+        
+        return assignments
+    }
+    
+    static func crateRearrangement() -> (Array<Stack>, Array<MovementInstruction>) {
+        let filePath = Bundle.main.url(forResource: "crate_rearrangement", withExtension: nil)
+        var stacks = [ Stack(id: 1), Stack(id: 2), Stack(id: 3), Stack(id: 4), Stack(id: 5), Stack(id: 6), Stack(id: 7), Stack(id: 8), Stack(id: 9)]
+        var movements: Array<MovementInstruction> = []
+        
+        do {
+            let contents = try String(contentsOf: filePath!)
+            let lines = contents.split(separator: "\n")
+            
+            let initialArrangement = lines.filter({ $0.contains("[") })
+            let movementInstructions = lines.filter({ $0.contains("move")})
+            
+            // Read initial arrangement
+            initialArrangement.forEach { row in
+                let placements = row.split(separator: " ")
+                
+                placements.indices.forEach { stackIndex in
+                    if placements[stackIndex].contains("[") {
+                        stacks[stackIndex].crates.append(Crate(label: "\(placements[stackIndex])"))
+                    }
+                }
+            }
+            
+            // Read movement instructions
+            movementInstructions.forEach { instruction in
+                var values = instruction.components(separatedBy: .decimalDigits.inverted)
+                values.removeAll(where: { $0 == "" })
+                movements.append(MovementInstruction(numberToMove: Int(values[0]) ?? 0, startStack: Int(values[1]) ?? 0, endStack: Int(values[2]) ?? 0, stringRepresentation: "\(instruction)"))
+            }
+        } catch {
+            print(error)
+        }
+        
+        return (stacks, movements)
     }
 }

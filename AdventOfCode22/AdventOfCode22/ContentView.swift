@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  AdventOfCode22
-//
-//  Created by Logan Parmeter on 12/10/22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -42,6 +35,28 @@ struct ContentView: View {
                             .resizable()
                             .frame(width: 50, height: 50)
                         Text("Rucksack Inventory")
+                    }
+                }
+                
+                NavigationLink {
+                    CleaningAssignmentsView()
+                } label: {
+                    HStack {
+                        Image(systemName: "washer")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                        Text("Cleaning Assignments")
+                    }
+                }
+                
+                NavigationLink {
+                    CrateRearrangementView()
+                } label: {
+                    HStack {
+                        Image(systemName: "shippingbox")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                        Text("Crate Rearrangement")
                     }
                 }
             }

@@ -1,10 +1,3 @@
-//
-//  Rucksack.swift
-//  AdventOfCode22
-//
-//  Created by Logan Parmeter on 12/28/22.
-//
-
 import Foundation
 
 struct RucksackGroup: Identifiable {

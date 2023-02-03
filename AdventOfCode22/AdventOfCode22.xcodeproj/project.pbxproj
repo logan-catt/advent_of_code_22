@@ -27,6 +27,12 @@
 		027A50CA295CE3AE00E302BE /* rucksack_inventory in Resources */ = {isa = PBXBuildFile; fileRef = 027A50C9295CE3AE00E302BE /* rucksack_inventory */; };
 		027A50CC295CE4BC00E302BE /* Rucksack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A50CB295CE4BC00E302BE /* Rucksack.swift */; };
 		027A50CE295CECE200E302BE /* RucksackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A50CD295CECE200E302BE /* RucksackView.swift */; };
+		02D77172298B8EB0001F813F /* cleaning_assignments in Resources */ = {isa = PBXBuildFile; fileRef = 02D77171298B8EB0001F813F /* cleaning_assignments */; };
+		02D77174298B8F2E001F813F /* CleaningAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D77173298B8F2E001F813F /* CleaningAssignment.swift */; };
+		02D77176298B9172001F813F /* CleaningAssignmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D77175298B9172001F813F /* CleaningAssignmentsView.swift */; };
+		02D77178298C37F5001F813F /* crate_rearrangement in Resources */ = {isa = PBXBuildFile; fileRef = 02D77177298C37F5001F813F /* crate_rearrangement */; };
+		02D7717A298C38F9001F813F /* CrateRearrangementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D77179298C38F9001F813F /* CrateRearrangementView.swift */; };
+		02D7717C298C3D17001F813F /* Crate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D7717B298C3D17001F813F /* Crate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +76,12 @@
 		027A50C9295CE3AE00E302BE /* rucksack_inventory */ = {isa = PBXFileReference; lastKnownFileType = text; path = rucksack_inventory; sourceTree = "<group>"; };
 		027A50CB295CE4BC00E302BE /* Rucksack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rucksack.swift; sourceTree = "<group>"; };
 		027A50CD295CECE200E302BE /* RucksackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RucksackView.swift; sourceTree = "<group>"; };
+		02D77171298B8EB0001F813F /* cleaning_assignments */ = {isa = PBXFileReference; lastKnownFileType = text; path = cleaning_assignments; sourceTree = "<group>"; };
+		02D77173298B8F2E001F813F /* CleaningAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningAssignment.swift; sourceTree = "<group>"; };
+		02D77175298B9172001F813F /* CleaningAssignmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningAssignmentsView.swift; sourceTree = "<group>"; };
+		02D77177298C37F5001F813F /* crate_rearrangement */ = {isa = PBXFileReference; lastKnownFileType = text; path = crate_rearrangement; sourceTree = "<group>"; };
+		02D77179298C38F9001F813F /* CrateRearrangementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrateRearrangementView.swift; sourceTree = "<group>"; };
+		02D7717B298C3D17001F813F /* Crate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +176,8 @@
 				027A50B42944606300E302BE /* Food.swift */,
 				027A50C5295CC5EE00E302BE /* RockPaperScissors.swift */,
 				027A50CB295CE4BC00E302BE /* Rucksack.swift */,
+				02D77173298B8F2E001F813F /* CleaningAssignment.swift */,
+				02D7717B298C3D17001F813F /* Crate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,6 +190,8 @@
 				027A50BB294464A400E302BE /* ElfDetailView.swift */,
 				027A50C7295CD15500E302BE /* RockPaperScissorsView.swift */,
 				027A50CD295CECE200E302BE /* RucksackView.swift */,
+				02D77175298B9172001F813F /* CleaningAssignmentsView.swift */,
+				02D77179298C38F9001F813F /* CrateRearrangementView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +202,8 @@
 				027A50BE29446B5400E302BE /* elf_food */,
 				027A50C3295CC5C700E302BE /* strategy_guide */,
 				027A50C9295CE3AE00E302BE /* rucksack_inventory */,
+				02D77171298B8EB0001F813F /* cleaning_assignments */,
+				02D77177298C37F5001F813F /* crate_rearrangement */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -302,7 +320,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D77172298B8EB0001F813F /* cleaning_assignments in Resources */,
 				027A50BF29446B5400E302BE /* elf_food in Resources */,
+				02D77178298C37F5001F813F /* crate_rearrangement in Resources */,
 				027A508F29445EEE00E302BE /* Preview Assets.xcassets in Resources */,
 				027A50C4295CC5C700E302BE /* strategy_guide in Resources */,
 				027A50CA295CE3AE00E302BE /* rucksack_inventory in Resources */,
@@ -335,9 +355,13 @@
 				027A50C8295CD15500E302BE /* RockPaperScissorsView.swift in Sources */,
 				027A50B32944601C00E302BE /* Elf.swift in Sources */,
 				027A50CE295CECE200E302BE /* RucksackView.swift in Sources */,
+				02D7717A298C38F9001F813F /* CrateRearrangementView.swift in Sources */,
+				02D7717C298C3D17001F813F /* Crate.swift in Sources */,
 				027A50B8294461A200E302BE /* ElfCellView.swift in Sources */,
 				027A50BC294464A400E302BE /* ElfDetailView.swift in Sources */,
+				02D77176298B9172001F813F /* CleaningAssignmentsView.swift in Sources */,
 				027A50C229446BA600E302BE /* InputReaderClient.swift in Sources */,
+				02D77174298B8F2E001F813F /* CleaningAssignment.swift in Sources */,
 				027A50C6295CC5EE00E302BE /* RockPaperScissors.swift in Sources */,
 				027A50B52944606300E302BE /* Food.swift in Sources */,
 				027A50CC295CE4BC00E302BE /* Rucksack.swift in Sources */,
